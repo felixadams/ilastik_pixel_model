@@ -42,4 +42,4 @@ Once you've edited the batch file with the correct file paths, save it and run t
 - The script will create a log file (`ilastik_log.txt`) to track any potential errors.
 - Feel free to reach out if you encounter any issues or have questions: felix.adams1@gmail.com
 
-## Once finished go to the confluence calculator!!!!
+## Once finished go to the area calculator!!!!

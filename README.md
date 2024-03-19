@@ -1,23 +1,17 @@
-# Run photo imaging - pixel classification
+# Run Photo Imaging - Pixel Classification
 
-this takes a folder of brightfield images and then performs pixel classification using a pretrained model from ILAStik. 
+This script processes a folder of brightfield images and performs pixel classification using a pretrained model from ILAStik. Our fine-tuned model is included in the project.
 
-our fine tuned model is present in the project. 
+## Dependencies
 
-for this to work it requires us to download ilastik. 
-The windows veriosn for this link is below. This is the version we have used: 
+To use this script, you need to download ILAStik. Here's the link to download the Windows version: [ILAStik 1.4.0.post1 (Windows 64-bit)](https://files.ilastik.org/ilastik-1.4.0.post1-win64.exe).
 
-https://files.ilastik.org/ilastik-1.4.0.post1-win64.exe
+## Setup
 
-please download. It will likely suggest to download it to program files. That is where mine is so thats fine, probably preferable.
-
-You will be able to go to the program when downloaded by going to windows powershell and then goign to the directory PS C:\Program Files\ilastik-1.4.0.post1>.
-
-For the batch file to work, you will need to edit it so that it contains the correct "pointers" for you directories.
-
-For example below is what I have for mine, and the one I've posted here. 
+**Download ILAStik**: Download and install ILAStik from the link provided above. The installation directory is typically `C:\Program Files\ilastik-1.4.0.post1`.
 
 
+you will need to edit the .bat file. you will need to do this in notepad. You will need to change the directories so that they point to yours (where you have downloaded the given folders). You should then be able to run it and then it will automate the rest. 
 
 @echo off
 set ILASTIK_DIR="C:\Program Files\ilastik-1.4.0.post1"
@@ -38,5 +32,14 @@ echo All photos processed.
 pause
 
 
+## Run Script
 
+Once you've edited the batch file with the correct file paths, save it and run the batch file. It will process each image in the input directory and generate output files in HDF5 format in the output directory.
 
+## Notes
+
+- Ensure your project file (`project.ilp`) contains the correct settings for pixel classification (the one provided will do).
+- The script will create a log file (`ilastik_log.txt`) to track any potential errors.
+- Feel free to reach out if you encounter any issues or have questions: felix.adams1@gmail.com
+
+## Once finished go to the confluence calculator!!!!
